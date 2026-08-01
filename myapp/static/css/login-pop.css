@@ -1,0 +1,107 @@
+body {
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.modal {
+    visibility: hidden;
+    opacity:0;
+    display: none;
+    position: fixed;
+    top: 50%;
+    height:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    width: 600px;
+    border-radius:50px;
+    overflow: hidden;
+}
+.modal.show{
+    visibility: visible;
+    opacity:1;
+    display : block;
+
+
+}
+.card {
+      color: black;
+      border: none;
+      width: 100%;
+    }
+
+.form-label {
+      color:black;
+
+    }
+
+.btn {
+      background-color: #8cab69;
+      border-color: #8cab69;
+      color: #f0f0f0;
+      padding:10px;
+      margin:10px;
+
+ }
+
+    .btn:hover {
+      background-color: #A0B191; /* Slightly lighter blue */
+      border-color: #A0B191;
+    }
+
+    a {
+      color: #38bdf8; /* Cyan for links */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .input-group .form-control {
+      border-right: 0;
+    }
+
+    .input-group .input-group-text {
+      background-color: #1b263b;
+      border-left: 0;
+      cursor: pointer;
+      padding:10px;
+    }
+
+    #togglePassword i {
+      color: #ffffff; /* Eye icon color */
+    }
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: solid #dad0aa 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.close{
+   position:absolute;
+   right:15px;
+   top:20px;
+   font-size:30px;
+   cursor:pointer;
+   }
+
+

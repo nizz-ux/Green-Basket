@@ -1,0 +1,202 @@
+<div class="topbar-one">
+            <div class="container">
+                <div class="topbar-one__inner">
+                    <ul class="list-unstyled topbar-one__info">
+                        <li class="topbar-one__info__item">
+                            <i class="icofont-wall-clock topbar-one__info__icon"></i>
+                            Mon - Sat 8.00 - 18.00. Sun Closed
+                        </li>
+                        <li class="topbar-one__info__item">
+                            <i class="icofont-location-pin topbar-one__info__icon"></i>
+                            Naroda ,Ahmedabad,Gujrat
+                        </li>
+                    </ul><!-- /.list-unstyled topbar-one__info -->
+                    <div class="topbar-one__right">
+                        <div class="topbar-one__social">
+
+                            <a href="https://facebook.com/">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                            <a href="https://pinterest.com/">
+                                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>
+                            <a href="https://twitter.com/">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                            <a href="https://instagram.com/">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </div><!-- /.topbar-one__social -->
+                        <div class="topbar-one__language">
+                            <a href="#"><img src="/static/images/greenbasket/india.png" alt="alefox">EN</a>
+                            <div class="topbar-one__language__dropdown" style="display: none;">
+                                <a href="#"><img src="/static/images/greenbasket/india.png" alt="alefox">EN</a>
+                                <a href="#"><img src="/static/images/greenbasket/india.png" alt="alefox">FR</a>
+                            </div>
+                        </div>
+                    </div><!-- /.topbar-one__right -->
+                </div><!-- /.topbar-one__inner -->
+            </div><!-- /.container-fluid -->
+        </div><!-- /.topbar-one -->
+<header class="main-header sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header__inner">
+                    <div class="main-header__logo">
+                        <a href="http://127.0.0.1:8000/">
+                            <img src="/static/images/greenbasket/logo1.png" alt="Alefox HTML" width="100">
+                        </a>
+                    </div><!-- /.main-header__logo -->
+
+                    <nav class="main-header__nav main-menu">
+                        <ul class="main-menu__list">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/about_view">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Pages</a>
+                                <ul>
+                                    <li>
+                                        <a href="/project/">Our Project</a>
+                                        <ul>
+                                            <li><a href="/project/">Project Page</a></li>
+                                            <li><a href="/project_detail/">Project Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                        <ul>
+                                            <li><a href="/team/">Team Page</a></li>
+                                            <li><a href="/team_details/">Team Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/reviews/">Testimonials</a></li>
+                                    <li><a href="/packages/">Pricing</a></li>
+
+
+                                    <li><a href="/login/">Login</a></li>
+                                    <li><a href="/register/">Register</a></li>
+                                    <li><a href="/error/">404 Error</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Services</a>
+                                <ul>
+                                    <li><a href="/service_fresh/">Always Fresh</a></li>
+                                    <li><a href="/service_farming/">Organic Solutions</a></li>
+                                    <li><a href="/service_organic/">Organic Product</a></li>
+                                    <li><a href="/service_agriculture/">Agriculture Staff</a></li>
+                                    <li><a href="/service_growth/">Growth Providing</a></li>
+                                    <li><a href="/service_plants/">Decorative Plants</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="/product_view/">Shop</a>
+                                <ul class="sub-menu">
+
+                                     {% if request.session.log_role == "User" %}
+                                    <li><a href="/cart_view/">Cart</a></li>
+                                    <li><a href="/wish_list/">wishlist</a></li>
+                                    {% endif %}
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">News</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/realtime_news">Real Time News</a></li>
+                                    <li>
+                                        <a href="/grid/">News grid</a>
+                                    </li>
+                                    <li><a href="/blog/">News carousel</a></li>
+                                    <li><a href="/blog_list/">News carousel</a></li>
+                                    <li class="dropdown">
+                                        <a href="/grid_detail/">News details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/contact/">Contact</a>
+                            </li>
+                        </ul>
+                    </nav><!-- /.main-header__nav -->
+
+    <div class="main-header__right">
+
+
+<input type="checkbox" id="search-toggle" class="search-checkbox" />
+
+<!-- Label that opens the overlay (magnifying glass icon) -->
+<label for="search-toggle" class="search-open-icon">
+  <i class="icon-magnifying-glass" aria-hidden="true"></i>
+  <span class="sr-only">Search</span>
+</label>
+
+<!-- Fullscreen Overlay -->
+<div class="search-overlay">
+  <!-- Label that closes the overlay (× icon) -->
+  <label for="search-toggle" class="search-close-icon">&times;</label>
+
+  <!-- Search Form -->
+  <form action="{% url 'search_products' %}" method="GET" class="search-form">
+    <input
+      type="text"
+      name="q"
+      placeholder="Type your search..."
+      required
+    />
+    <button type="submit">
+      <i class="icon-magnifying-glass" aria-hidden="true"></i>
+    </button>
+  </form>
+</div>
+
+
+     {% if request.session.log_name %}
+
+        {% if request.session.log_role == "User" %}
+            <a href="/cart_view/" class="main-header__cart">
+                <i class="icon-shopping-cart" aria-hidden="true"></i>
+                <span class="main-header__cart__count">2</span>
+            </a>
+            <a class="text-btn " href="/orders/">Your Orders</a>
+        {% endif %}
+
+
+        <!-- Display User Name -->
+        <div class="user-info ">
+            <a href="/insert_profile/"><span class="text-btn " style="font-size:20px; padding:10px;">{{ request.session.log_name }}</span> </a>
+
+        </div>
+
+        {% if request.session.log_role == "Farmer" %}
+            <a class="text-btn" href="/add_product/" >Add Product</a>
+            <a class="text-btn " href="/manageproduct">Manage Product</a>
+        {% endif %}
+
+
+        <a class="text-btn" href="/logout/">Log Out</a>
+    {% else %}
+        <a class="text-btn" href="/login/">Login</a>
+        <a class="text-btn" href="/register_fetch_data/">Sign Up</a>
+{% endif %}
+</div>
+                      <div class="main-header__right__border">
+                            </div>
+                        <div class="main-header__call">
+                            <div class="main-header__call__icon"><span class="icon-phone-call-two"></span></div>
+                            <div class="main-header__call__title">Requesting a Call:</div>
+                            <a class="main-header__call__text" href="tel:88012365499">+88 0123 654 99</a>
+                        </div><!-- /. main-header__info -->
+                    </div><!-- /.main-header__right -->
+                </div><!-- /.main-header__inner -->
+
+    <!-- /.container-fluid -->
+        </header><!-- /.main-header -->
+

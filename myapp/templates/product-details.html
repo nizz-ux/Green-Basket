@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from bracketweb.com/alefox-html/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2025 09:01:17 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Details || Alefox || HTML Template For Organic Food Farming & Agriculture</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/static/images/favicons/site.webmanifest" />
+    <meta name="description" content="Alefox is a modern HTML Template for agriculture field, farm, farmers, eco solutions and organic food products. Alefox HTML Template perfectly fit for all the green initiatives of the farming communities websites and businesses." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/static/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="/static/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="/static/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/static/vendors/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="/static/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="/static/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="/static/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="/static/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="/static/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="/static/vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="/static/vendors/slick/slick.css">
+    <link rel="stylesheet" href="/static/vendors/alefox-icons/style.css" />
+    <link rel="stylesheet" href="/static/vendors/owl-carousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/static/vendors/owl-carousel/css/owl.theme.default.min.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="/static/css/alefox.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(/static/images/loader.png);"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+
+
+        {% include 'nav.html' %}
+
+        <section class="product-details">
+            <div class="container">
+                <!-- /.product-details -->
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 wow fadeInLeft" data-wow-delay="200ms">
+                        <div class="product-details__gallery">
+                            <div class="product-details__gallery__flash">
+                                <span class="product-details__gallery__flash__off">20% Off</span>
+                            </div>
+                            <div class="product-details__carousel alefox-slick__carousel" data-slick-options='{
+						"slidesToShow": 1,
+						"slidesToScroll": 1,
+						"asNavFor": ".product-details__carousel-thumb",
+						"autoplay": true,
+						"infinite": true,
+						"dots": false,
+						"centerPadding": 0,
+						"arrows": false,
+						"nextArrow": "<button class=\"next\"><i class=\"icon-right-arrow-two1\"></i></button>",
+						"prevArrow": "<button class=\"prev\"><i class=\"icon-right-arrow-two\"></i></button>"
+						}'>
+                                <div class="item">
+                                    <div class="product-details__gallery__image">
+                                        <img src="/media/{{ data.prod_image }}" alt="alefox">
+                                        <a class="img-popup" href="/media/{{ data.prod_image }}"><span class="icon-magnifying-glass"></span></a><!-- /.product-image -->
+                                    </div>
+                                </div><!-- item -->
+                                <div class="item">
+                                    <div class="product-details__gallery__image">
+                                        <img src="/media/{{ data.prod_image }}" alt="alefox">
+                                        <a class="img-popup" href="/media/{{ data.prod_image }}"><span class="icon-magnifying-glass"></span></a><!-- /.product-image -->
+                                    </div>
+                                </div><!-- item -->
+                                <div class="item">
+                                    <div class="product-details__gallery__image">
+                                        <img src="/media/{{ data.prod_image }}" alt="alefox">
+                                        <a class="img-popup" href="/media/{{ data.prod_image }}"><span class="icon-magnifying-glass"></span></a><!-- /.product-image -->
+                                    </div>
+                                </div><!-- item -->
+                                <div class="item">
+                                    <div class="product-details__gallery__image">
+                                        <img src="/media/{{ data.prod_image }}" alt="alefox">
+                                        <a class="img-popup" href="/media/{{ data.prod_image }}"><span class="icon-magnifying-glass"></span></a><!-- /.product-image -->
+                                    </div>
+                                </div><!-- item -->
+                                <div class="item">
+                                    <div class="product-details__gallery__image">
+                                        <img src="/media/{{ data.prod_image }}" alt="alefox">
+                                        <a class="img-popup" href="/media/{{ data.prod_image }}"><span class="icon-magnifying-glass"></span></a><!-- /.product-image -->
+                                    </div>
+                                </div><!-- item -->
+                            </div>
+                            <ul class="product-details__carousel-thumb alefox-slick__carousel" data-slick-options='{
+						"slidesToShow": 3,
+						"slidesToScroll": 1,
+						"autoplay": true,
+						"infinite": true,
+						"centerMode": true,
+						"asNavFor": ".product-details__carousel",
+						"focusOnSelect": true,
+						"dots": false,
+						"centerPadding": 0,
+						"arrows": false
+						}'>
+                                <li role="presentation">
+                                    <div class="item">
+                                        <span class="product-details__meta-thumb"><img src="/media/{{ data.prod_image }}" alt="alefox"></span>
+                                    </div>
+                                </li><!-- Testimonial Item -->
+                                <li role="presentation">
+                                    <div class="item">
+                                        <span class="product-details__meta-thumb"><img src="/media/{{ data.prod_image }}" alt="alefox"></span>
+                                    </div>
+                                </li><!-- Testimonial Item -->
+                                <li role="presentation">
+                                    <div class="item">
+                                     <span class="product-details__meta-thumb"><img src="/media/{{ data.prod_image }}" alt="alefox"></span>
+                                    </div>
+                                </li><!-- Testimonial Item -->
+                                <li role="presentation">
+                                    <div class="item">
+                                       <span class="product-details__meta-thumb"><img src="/media/{{ data.prod_image }}" alt="alefox"></span>
+                                    </div>
+                                </li><!-- Testimonial Item -->
+                                <li role="presentation">
+                                    <div class="item">
+                                        <span class="product-details__meta-thumb"><img src="/media/{{ data.prod_image }}" alt="alefox"></span>
+                                    </div>
+                                </li><!-- Testimonial Item -->
+                            </ul><!-- Testimonial Thumb -->
+                        </div>
+                    </div><!-- /.column -->
+                    <div class="col-lg-6 col-xl-6 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="product-details__content">
+                            <h3 class="product-details__title">{{ data.prod_name }}</h3><!-- /.product-title -->
+                            <div class="product-details__price">
+                                <span class="product-details__price__regular">{{ data.prod_price }}</span>
+                                <span class="product-details__price__offer">$200.00</span>
+                                <span class="product-details__price__stock">{{ data.prod_state }}</span>
+                            </div><!-- /.product-price -->
+
+                            <div class="product-details__excerpt">
+                                There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in
+                                some form, by injected humour or randomised words which don't look even slightly believable.
+                            </div><!-- /.excerp-text -->
+                            <ul class="product-details__feature">
+                                <li><span class="product-details__feature__icon"><i class="icofont-check-alt"></i></span>Excellent audio performance</li>
+                                <li><span class="product-details__feature__icon"><i class="icofont-check-alt"></i></span>Lorem ipsum available, but the majority have suffered.</li>
+                            </ul>
+                            <form action="/insertintocart/" method="post">
+                                {% csrf_token %}
+                            <div class="product-details__qt">
+                                <div class="product-details__quantity">
+                                    <h3 class="product-details__quantity__title">Quantity</h3>
+                                    <div class="quantity-box">
+                                        <button type="button" class="sub"><i class="icofont-thin-down"></i></button>
+                                        <input type="number" name="quantity" min="1" value="1">
+                                      <button type="button" class="add"><i class="icofont-thin-up"></i></button>
+
+                                        <input type="hidden" name="product_id" value="{{ data.id }}">
+                                        <input type="hidden" name="price" value="{{ data.prod_price }}">
+
+                                </div><!-- /.quantity -->
+                            </div>
+                                <div class="product-details__buttons">
+                                     <input type="submit" class="alefox-btn m-4" name="submit" value="Add To Cart">
+                                    <a href="/add_wishlist/{{ data.id }}" class="product-details__buttons__wishlist"><i class="far fa-heart"></i></a>
+                                </div><!-- /.qty-btn -->
+                            </div>
+                        </form>
+                            <ul class="product-details__info">
+                                <li><span class="product-details__info__icon"><i class="icofont-check-alt"></i></span><strong>Estimated Delivery:</strong> 60-60 days Ships to Bangladesh</li>
+                                <li><span class="product-details__info__icon"><i class="icofont-check-alt"></i></span><strong>Free Shipping:</strong> From China to Bangladesh via Super Economy Global</li>
+                            </ul>
+                            <div class="product-details__socials">
+                                <h4 class="product-details__socials__title">Share:</h4>
+
+                                <a href="https://facebook.com/">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                                <a href="https://pinterest.com/">
+                                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                                    <span class="sr-only">Pinterest</span>
+                                </a>
+                                <a href="https://twitter.com/">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                                <a href="https://instagram.com/">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </div><!-- /.social-share -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.product-details -->
+                <!-- /.product-description -->
+                <div class="product-details__description wow fadeInUp" data-wow-delay="300ms">
+                    <h3 class="product-details__description__title">Description</h3>
+                    <p class="product-details__description__text">
+                        {{ data.prod_desc }}
+                    </p>
+                    <ul class="list-unstyled product-details__description__lists">
+                        <li><span class="icon-check-mark"></span>There are many variations of pass available.</li>
+                        <li><span class="icon-check-mark"></span>Accelerate innovation with world-class Food</li>
+                        <li><span class="icon-check-mark"></span>Organic Return Policy Money back guarantee</li>
+                        <li><span class="icon-check-mark"></span>We provide truly prominent organic policy.</li>
+                        <li><span class="icon-check-mark"></span>Atiam rhoncus sit amet adip scing sed ipsum.</li>
+                        <li><span class="icon-check-mark"></span>This honcus sit amet adip scing sed ipsum.</li>
+                    </ul>
+                    <p class="product-details__description__text">
+                        Polor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
+                        lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit.
+                        Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien.
+                    </p>
+                </div>
+                <!-- /.product-description -->
+                <!-- /.product-comment -->
+                <div class="product-details__comment wow fadeInUp" data-wow-delay="400ms">
+                    <h3 class="product-details__review-title">2 Reviews</h3>
+                    <!--Start Comment Box-->
+                    <div class="product-details__comment-box">
+                        <figure class="product-details__comment-box__thumb"><img src="/static/images/products/product-c-1-1.jpg" alt="nisoz">
+                        </figure><!-- comment-image -->
+                        <h4 class="product-details__comment-box__meta">Kevin martin<span class="product-details__comment-box__date">20 June, 2023 . 4:00 pm</span></h4>
+                        <!-- comment-meta -->
+                        <div class="product-details__comment-box__ratings">
+                            <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                        </div><!-- comment-ratings -->
+                        <p class="product-details__comment-box__text">
+                            It has survived not only five centuries, but also the leap into electronic typesetting unchanged. It
+                            was popularised in the sheets containing lorem ipsum is simply free text. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sollicitudin
+                            varius mauris non dignissim.
+                        </p><!-- comment-text -->
+                    </div>
+                    <!--End Comment Box-->
+                    <!--Start Comment Box-->
+                    <div class="product-details__comment-box">
+                        <figure class="product-details__comment-box__thumb"><img src="/static/images/products/product-c-1-2.jpg" alt="nisoz">
+                        </figure><!-- comment-image -->
+                        <h4 class="product-details__comment-box__meta">Sarah albert<span class="product-details__comment-box__date">20 June, 2023 . 4:00 pm</span></h4>
+                        <!-- comment-meta -->
+                        <div class="product-details__comment-box__ratings">
+                            <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                        </div><!-- comment-ratings -->
+                        <p class="product-details__comment-box__text">
+                            It has survived not only five centuries, but also the leap into electronic typesetting unchanged. It
+                            was popularised in the sheets containing lorem ipsum is simply free text. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sollicitudin
+                            varius mauris non dignissim.
+                        </p><!-- comment-text -->
+                    </div>
+                    <!--End Comment Box-->
+                </div>
+                <!-- /.product-comment -->
+                <!-- /.product-comment-form -->
+
+
+            </div>
+
+        </section>
+        <!-- Products End -->
+
+        <section class="related-product">
+            <div class="container">
+                <h3 class="related-product__title">Related Products</h3>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="related-product__carousel alefox-owl__carousel alefox-owl__carousel--with-shadow alefox-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+						"items": 1,
+						"margin": 0,
+						"loop": false,
+						"smartSpeed": 700,
+						"nav": false,
+						"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+						"dots": false,
+						"autoplay": false,
+						"responsive": {
+							"0": {
+								"items": 1
+							},
+							"576": {
+								"items": 2,
+								"margin": 30
+							},
+							"992": {
+								"items": 3,
+								"margin": 30
+							},
+							"1200": {
+								"items": 4,
+								"margin": 30
+							}
+						}
+					}'>
+                            <div class="item">
+                                <div class="product__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='250ms'>
+                                    <div class="product__item__img">
+                                        <img src="/static/images/products/product-1-6.png" alt="alefox">
+
+                                        <div class="product__item__btn">
+                                            <a href="cart_view"><i class="icon-shopping-cart"></i></a>
+                                            <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                            <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div><!-- /.product-image -->
+                                    <div class="product__item__content">
+                                        <div class="product__item__cats">
+                                            <a href="products.html">Grocery</a>
+                                        </div>
+                                        <h4 class="product__item__title"><a href="product-details.html">Rip Banana</a></h4><!-- /.product-title -->
+                                        <div class="product__item__price">RS.11.00</div><!-- /.product-price -->
+                                        <div class="product__item__ratings">
+                                        </div><!-- /.product-ratings -->
+                                    </div><!-- /.product-content -->
+                                </div><!-- /.product-item -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="product__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="product__item__img">
+                                        <img src="/static/images/products/product-1-7.png" alt="alefox">
+
+                                        <div class="product__item__flash">
+                                            <span class="product__item__flash__off">20% Off</span>
+                                        </div>
+
+                                        <div class="product__item__btn">
+                                            <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                            <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                            <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div><!-- /.product-image -->
+                                    <div class="product__item__content">
+                                        <div class="product__item__cats">
+                                            <a href="products.html">Salads</a>
+                                        </div>
+                                        <h4 class="product__item__title"><a href="product-details.html">Strawberry</a></h4><!-- /.product-title -->
+                                        <div class="product__item__price">RS.10.00</div><!-- /.product-price -->
+                                        <div class="product__item__ratings">
+                                        </div><!-- /.product-ratings -->
+                                    </div><!-- /.product-content -->
+                                </div><!-- /.product-item -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="product__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='350ms'>
+                                    <div class="product__item__img">
+                                        <img src="/static/images/products/product-1-8.png" alt="alefox">
+
+                                        <div class="product__item__btn">
+                                            <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                            <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                            <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div><!-- /.product-image -->
+                                    <div class="product__item__content">
+                                        <div class="product__item__cats">
+                                            <a href="products.html">Grocery</a>
+                                        </div>
+                                        <h4 class="product__item__title"><a href="product-details.html">Red Mango</a></h4><!-- /.product-title -->
+                                        <div class="product__item__price">RS.12.00</div><!-- /.product-price -->
+                                        <div class="product__item__ratings">
+                                        </div><!-- /.product-ratings -->
+                                    </div><!-- /.product-content -->
+                                </div><!-- /.product-item -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="product__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='400ms'>
+                                    <div class="product__item__img">
+                                        <img src="/static/images/products/product-1-9.png" alt="alefox">
+
+                                        <div class="product__item__flash">
+                                            <span class="product__item__flash__off">20% Off</span>
+                                        </div>
+
+                                        <div class="product__item__btn">
+                                            <a href="cart.html"><i class="icon-shopping-cart"></i></a>
+                                            <a href="wishlist.html"><i class="far fa-heart"></i></a>
+                                            <a href="product-details.html"><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div><!-- /.product-image -->
+                                    <div class="product__item__content">
+                                        <div class="product__item__cats">
+                                            <a href="products.html">Vegetables</a>
+                                        </div>
+                                        <h4 class="product__item__title"><a href="product-details.html">Raw Beetroot</a></h4><!-- /.product-title -->
+                                        <div class="product__item__price">RS.15.00</div><!-- /.product-price -->
+                                        <div class="product__item__ratings">
+                                        </div><!-- /.product-ratings -->
+                                    </div><!-- /.product-content -->
+                                </div><!-- /.product-item -->
+                            </div><!-- /.item -->
+                        </div><!-- /.row -->
+                    </div><!-- /.col-lg-12 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.product-one -->
+
+     {% include 'footer.html' %}
+
+    </div><!-- /.page-wrapper -->
+
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="/static/images/logo-light.png" width="155" alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@alefox.com">needhelp@alefox.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+
+                <a href="https://facebook.com/">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://pinterest.com/">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://instagram.com/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="alefox-btn">
+                    <span><i class="icon-magnifying-glass"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+    <!-- Sidebar One Start -->
+    <aside class="sidebar-one">
+        <div class="sidebar-one__overlay"></div><!-- /.siderbar-ovarlay -->
+        <div class="sidebar-one__content">
+            <div class="sidebar-one__close"><i class="icofont-close-line"></i></div><!-- /.siderbar-close -->
+            <div class="sidebar-one__logo">
+                <a href="index.html" aria-label="logo image"><img src="/static/images/logo-light.png" alt="Careox HTML" width="147"></a>
+            </div><!-- /.sidebar-one__logo-box -->
+            <p class="sidebar-one__text">
+                Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ
+                puru rhoncu tincidunt odio ultrices. Sed feugiat feugiat felis.
+            </p>
+            <h4 class="sidebar-one__title">Contact Info:</h4>
+            <ul class="sidebar-one__info">
+                <li>
+                    <span class="fas fa-map-marker-alt"></span>
+                    85 Ketch Harbour RoadBensalem, PA 19020
+                </li>
+                <li>
+                    <span class="fas fa-envelope"></span>
+                    <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                </li>
+                <li>
+                    <span class="fas fa-phone-alt"></span>
+                    <a href="tel:09969569535">099 695 695 35</a>
+                </li>
+            </ul>
+            <div class="sidebar-one__social">
+
+                <a href="https://facebook.com/">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://pinterest.com/">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://instagram.com/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /sidebar-one__socila -->
+            <h4 class="sidebar-one__title">Newsletter:</h4>
+            <form action="#" data-url="MAILCHIMP_FORM_URL" class="sidebar-one__newsletter mc-form">
+                <input type="text" name="EMAIL" placeholder="Email address">
+                <button type="submit" class="fas fa-paper-plane">
+                    <span class="sr-only">submit</span><!-- /.sr-only -->
+                </button>
+            </form><!-- /.footer-widget__newsletter mc-form -->
+        </div><!-- /.sidebar__content -->
+    </aside>
+    <!-- Sidebar One Start -->
+
+    <!-- back-to-top-start -->
+    <a href="#" class="scroll-top">
+        <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </a>
+    <!-- back-to-top-end -->
+
+
+    <script src="/static/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="/static/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="/static/vendors/jarallax/jarallax.min.js"></script>
+    <script src="/static/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="/static/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="/static/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="/static/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="/static/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/static/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="/static/vendors/nouislider/nouislider.min.js"></script>
+    <script src="/static/vendors/tiny-slider/tiny-slider.js"></script>
+    <script src="/static/vendors/wnumb/wNumb.min.js"></script>
+    <script src="/static/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="/static/vendors/wow/wow.js"></script>
+    <script src="/static/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script src="/static/vendors/isotope/isotope.js"></script>
+    <script src="/static/vendors/slick/slick.min.js"></script>
+    <script src="/static/vendors/countdown/countdown.min.js"></script>
+    <script src="/static/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="/static/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <script src="/static/vendors/progress-bar/knob.js"></script>
+    <!-- gsap js -->
+    <script src="/static/vendors/gsap/gsap.js"></script>
+    <script src="/static/vendors/gsap/scrolltrigger.min.js"></script>
+    <script src="/static/vendors/gsap/splittext.min.js"></script>
+    <script src="/static/vendors/gsap/alefox-split.js"></script>
+    <!-- template js -->
+    <script src="/static/js/alefox.js"></script>
+</body>
+
+
+<!-- Mirrored from bracketweb.com/alefox-html/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2025 09:01:19 GMT -->
+</html>

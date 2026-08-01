@@ -1,0 +1,112 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Summary Boxes */
+.summary-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success {
+    background-color: #28a745;
+}
+
+.pending {
+    background-color: #ffc107;
+    color: black;
+}
+
+/* Table Styling */
+.payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-table th, .payment-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.payment-table th {
+    background: #343a40;
+    color: white;
+}
+
+/* Status Badges */
+.status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.paid {
+    background: #28a745;
+    color: white;
+}
+
+.pending {
+    background: #ffc107;
+    color: black;
+}
+
+/* Buttons */
+.btn-edit, .btn-delete {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}

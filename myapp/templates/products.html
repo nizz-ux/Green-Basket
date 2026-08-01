@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from bracketweb.com/alefox-html/products-right
+.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2025 09:01:17 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products || Alefox || HTML Template For Organic Food Farming & Agriculture</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/static/images/favicons/site.webmanifest" />
+    <meta name="description" content="Alefox is a modern HTML Template for agriculture field, farm, farmers, eco solutions and organic food products. Alefox HTML Template perfectly fit for all the green initiatives of the farming communities websites and businesses." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/static/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="/static/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="/static/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/static/vendors/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="/static/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="/static/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="/static/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="/static/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="/static/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="/static/vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="/static/vendors/slick/slick.css">
+    <link rel="stylesheet" href="/static/vendors/alefox-icons/style.css" />
+    <link rel="stylesheet" href="/static/vendors/owl-carousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/static/vendors/owl-carousel/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="/static/css/alefox.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(/static/images/loader.png);"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+
+
+ {% include 'nav.html' %}
+{% if messages %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    {% for message in messages %}
+      Swal.fire({
+        position: "top-end",
+        icon: "{% if message.tags == 'success' %}success{% else %}error{% endif %}",
+        title: "{{ message }}",
+        showConfirmButton: false,
+        timer: 2000
+      });
+    {% endfor %}
+  });
+</script>
+{% endif %}
+        <section class="page-header">
+            <!-- <div class="page-header__shape-left"></div>
+            <div class="page-header__shape-right"></div> -->
+             <div class="page-header__bg">
+              <video autoplay muted loop playsinline style ="width: 100%; height: 100%; object-fit: cover">
+                <!-- Use forward slashes in the file path -->
+                <source src="\static\images\video\prod1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+        </section><!-- /.page-header -->
+
+        <section class="product-one">
+            <div class="container">
+                <div class="row gutter-y-60">
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="product__info-top">
+                            <div class="product__showing-text-box">
+                                <p class="product__showing-text">Showing 1–9 of 12 Results</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row gutter-y-30">
+                              {% for i in product_data %}
+                            <div class="col-md-6 col-xl-4">
+
+                                <div class="product__item wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+<!--                                         {{ i.prod_image }}-->
+                                    <div class="product__item__img">
+                                      <a href="/product_details/{{ i.id }}/"> <img src="/media/{{ i.prod_image }}"> </a>
+                                        <div class="product__item__btn">
+                                            <a href="/cart_view/"><i class="icon-shopping-cart"></i></a>
+                                            <a href="/add_wishlist/{{ i.id }}"> <i class="far fa-heart"></i></i></a>
+                                            <a href="/project_detail/"><i class="fas fa-eye"></i></a>
+                                        </div>
+                                    </div><!-- /.product-image -->
+                                    <div class="product__item__content">
+                                        <div class="product__item__cats">
+                                            <a href="/product_view">{{ i.prod_cate }}</a>
+                                        </div>
+                                        <h4 class="product__item__title"><a href="/project_detail/">{{ i.prod_name }}</a></h4><!-- /.product-title -->
+                                        <div class="product__item__price">{{ i.prod_price }}</div><!-- /.product-price -->
+                                        <div class="product__item__ratings">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                             {% endfor %}
+
+                            <div class="col-md-12">
+                                <ul class="post-pagination product-page__pagination">
+                                    <li>
+                                        <a href="/product_view/">1</a>
+                                    </li>
+                                    <li>
+                                        <a class="current" href="/project_detail/">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="/project_detail/"><span class="icofont-double-right"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="product__sidebar product__sidebar-right">
+                            <div class="product__search">
+                                <form action="{% url 'search_products' %}" method="GET" class="search-form">
+                              <input  type="text" name="q" placeholder="Type your search..." required/>
+                                      <button type="submit" class="btn_search">
+                               <i class="icon-magnifying-glass" aria-hidden="true"></i>
+                                  </button>
+                                </form>
+                            </div><!-- /.search-widget -->
+                            <form action="{% url 'search_products' %}" method="GET">
+  <div class="product__price-ranger">
+    <h3 class="product__sidebar--title">Price</h3>
+    <div class="price-ranger">
+      <!-- Using number inputs for min and max price -->
+      <div class="ranger-min-max-block">
+        <label for="min_price">Min:</label>
+        <input class="input-range" type="number" name="min_price" id="min_price" placeholder="0" >
+        <label for="max_price">Max:</label>
+        <input class="input-range" type="number" name="max_price" id="max_price" placeholder="1000">
+          <br/>
+        <input class="input-range" type="submit" value="Filter">
+      </div>
+    </div>
+  </div>
+</form>
+                            <div class="product__categories">
+                                <h3 class="product__sidebar--title">Categories</h3>
+                                <ul class="list-unstyled">
+                                {% for i in  catename %}
+                                    <li><a href="/categorywayproduct/{{ i.id }}/"><span class="fa fa-arrow-right"></span>{{ i.category_name }}</a></li>
+                                    {% endfor %}
+                                     </ul>
+                            </div><!-- /.category-widget -->
+                        </div><!-- /.shop-sidebar -->
+                    </div><!-- /.col-xl-3 col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.product-one -->
+
+       {% include 'footer.html' %}
+
+    </div><!-- /.page-wrapper -->
+
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="/" aria-label="logo image"><img src="/static/images/logo-light.png" width="155" alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@alefox.com">needhelp@alefox.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+
+                <a href="https://facebook.com/">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://pinterest.com/">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://instagram.com/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="alefox-btn">
+                    <span><i class="icon-magnifying-glass"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+    <!-- Sidebar One Start -->
+    <aside class="sidebar-one">
+        <div class="sidebar-one__overlay"></div><!-- /.siderbar-ovarlay -->
+        <div class="sidebar-one__content">
+            <div class="sidebar-one__close"><i class="icofont-close-line"></i></div><!-- /.siderbar-close -->
+            <div class="sidebar-one__logo">
+                <a href="/" aria-label="logo image"><img src="/static/images/logo-light.png" alt="Careox HTML" width="147"></a>
+            </div><!-- /.sidebar-one__logo-box -->
+            <p class="sidebar-one__text">
+                Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ
+                puru rhoncu tincidunt odio ultrices. Sed feugiat feugiat felis.
+            </p>
+            <h4 class="sidebar-one__title">Contact Info:</h4>
+            <ul class="sidebar-one__info">
+                <li>
+                    <span class="fas fa-map-marker-alt"></span>
+                    85 Ketch Harbour RoadBensalem, PA 19020
+                </li>
+                <li>
+                    <span class="fas fa-envelope"></span>
+                    <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                </li>
+                <li>
+                    <span class="fas fa-phone-alt"></span>
+                    <a href="tel:09969569535">099 695 695 35</a>
+                </li>
+            </ul>
+            <div class="sidebar-one__social">
+
+                <a href="https://facebook.com/">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://pinterest.com/">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://instagram.com/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /sidebar-one__socila -->
+            <h4 class="sidebar-one__title">Newsletter:</h4>
+            <form action="#" data-url="MAILCHIMP_FORM_URL" class="sidebar-one__newsletter mc-form">
+                <input type="text" name="EMAIL" placeholder="Email address">
+                <button type="submit" class="fas fa-paper-plane">
+                    <span class="sr-only">submit</span><!-- /.sr-only -->
+                </button>
+            </form><!-- /.footer-widget__newsletter mc-form -->
+        </div><!-- /.sidebar__content -->
+    </aside>
+    <!-- Sidebar One Start -->
+
+    <!-- back-to-top-start -->
+    <a href="#" class="scroll-top">
+        <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </a>
+    <!-- back-to-top-end -->
+
+
+    <script src="/static/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="/static/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="/static/vendors/jarallax/jarallax.min.js"></script>
+    <script src="/static/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="/static/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="/static/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="/static/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="/static/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/static/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="/static/vendors/nouislider/nouislider.min.js"></script>
+    <script src="/static/vendors/tiny-slider/tiny-slider.js"></script>
+    <script src="/static/vendors/wnumb/wNumb.min.js"></script>
+    <script src="/static/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="/static/vendors/wow/wow.js"></script>
+    <script src="/static/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script src="/static/vendors/isotope/isotope.js"></script>
+    <script src="/static/vendors/slick/slick.min.js"></script>
+    <script src="/static/vendors/countdown/countdown.min.js"></script>
+    <script src="/static/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="/static/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <script src="/static/vendors/progress-bar/knob.js"></script>
+    <!-- gsap js -->
+    <script src="/static/vendors/gsap/gsap.js"></script>
+    <script src="/static/vendors/gsap/scrolltrigger.min.js"></script>
+    <script src="/static/vendors/gsap/splittext.min.js"></script>
+    <script src="/static/vendors/gsap/alefox-split.js"></script>
+    <!-- template js -->
+    <script src="/static/js/alefox.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+
+<!-- Mirrored from bracketweb.com/alefox-html/products-right.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2025 09:01:17 GMT -->
+</html>

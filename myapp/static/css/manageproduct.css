@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  background: #f4f4f9;
+}
+.sidebar{
+  width: 450px;
+  background: white;
+  padding: 20px;
+  height: 100vh;
+  margin:10px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar h2 {
+  color: #333;
+  margin-bottom: 20px;
+  padding-left:20px;
+}
+.menu {
+  list-style: none;
+}
+.menu li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.orders {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.edit,
+.delete {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+/* Edit Button */
+.edit {
+    background-color: #ffc107;
+    color: black;
+    border-radius: 25px;
+}
+
+.edit:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.delete {
+    background-color: #dc3545;  /* Red (Bootstrap Danger) */
+    color: white;
+}
+
+.delete:hover {
+    background-color: #c82333; /* Darker red */
+    transform: scale(1.05);
+}
